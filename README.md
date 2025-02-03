@@ -59,7 +59,7 @@ To enable SQLSRV on your Linux web server, follow these steps:
 
 ### **Step 1: Install Required Packages**
 Ensure your system has the required dependencies installed:
-```sh
+sh
 sudo apt update && sudo apt install -y unixodbc unixodbc-dev
 Step 2: Add Microsoft Repositories
 Download and install the Microsoft ODBC driver for your distribution:
@@ -94,27 +94,24 @@ sh
 Copy
 Edit
 sudo systemctl restart apache2
-🤝 Contributing
+### **🤝 Contributing**
 We welcome contributions! To contribute:
 
 Fork the repository.
 Create a new branch (feature-branch).
 Commit changes & submit a pull request.
-📄 License
-This project is licensed under the MIT License.
+### **📄 License**
+This project is licensed under the GPL-2.0 license.
 
-📷 Screenshots
-(Add screenshots of the settings page and account linking UI here)
+### **📷 Screenshots**
 
-⭐ Support & Feedback
+
+### **⭐ Support & Feedback**
 Need help? Have a feature request?
 Open an issue on GitHub or contact us at support@example.com.
 
 🚀 Elevate your customer experience with RBControl Rewards Integration!
 
-markdown
-Copy
-Edit
 
 ### **Key Updates:**
 ✅ Improved **Zero-Knowledge Encryption** section with a clear explanation  
