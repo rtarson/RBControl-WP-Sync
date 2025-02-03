@@ -1,5 +1,6 @@
 # RBControl Rewards Integration for WordPress
-![Banner Image](banner.png)
+![github-banner](https://github.com/user-attachments/assets/9ae069f3-9f1b-4c2e-9522-16afde424500)
+
 
 ## 🚀 Overview
 The **RBControl Rewards Integration** plugin seamlessly connects your WordPress site with the RBControl Systems Pool and Spa database. It allows customers to check their reward status directly from their account and provides admin functionalities for account linking.
@@ -61,39 +62,39 @@ To enable SQLSRV on your Linux web server, follow these steps:
 Ensure your system has the required dependencies installed:
 sh
 sudo apt update && sudo apt install -y unixodbc unixodbc-dev
-Step 2: Add Microsoft Repositories
+### **Step 2: Add Microsoft Repositories**
 Download and install the Microsoft ODBC driver for your distribution:
 
-sh
-Copy
-Edit
+```
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
 sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list)"
 sudo apt update
 sudo apt install -y msodbcsql17
-Step 3: Install PHP Drivers
+```
+
+### **Step 3: Install PHP Drivers**
 Install the necessary SQLSRV PHP extension:
 
-sh
-Copy
-Edit
+```
 sudo apt install -y php-pear php-dev php-xml
 sudo pecl install sqlsrv pdo_sqlsrv
-Step 4: Enable Extensions
+```
+
+### **Step 4: Enable Extensions**
 After installation, enable the SQLSRV extensions by adding them to your PHP configuration:
 
-sh
-Copy
-Edit
+```
 echo "extension=sqlsrv.so" | sudo tee -a /etc/php/*/cli/php.ini
 echo "extension=pdo_sqlsrv.so" | sudo tee -a /etc/php/*/cli/php.ini
-Step 5: Restart Web Server
+```
+
+### **Step 5: Restart Web Server**
 Restart your web server for changes to take effect:
 
-sh
-Copy
-Edit
+```
 sudo systemctl restart apache2
+```
+
 ### **🤝 Contributing**
 We welcome contributions! To contribute:
 
