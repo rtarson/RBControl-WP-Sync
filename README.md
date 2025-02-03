@@ -60,8 +60,10 @@ To enable SQLSRV on your Linux web server, follow these steps:
 
 ### **Step 1: Install Required Packages**
 Ensure your system has the required dependencies installed:
-sh
+```
 sudo apt update && sudo apt install -y unixodbc unixodbc-dev
+```
+
 ### **Step 2: Add Microsoft Repositories**
 Download and install the Microsoft ODBC driver for your distribution:
 
